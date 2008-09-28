@@ -1,0 +1,23 @@
+./slides/images/vcs.png
+
+  -- Gaveen Prabhasara
+  -- http://gaveen.owain.org/2008/05/simple-diagram-on-distributed-vcs-hint.html
+  -- http://bp3.blogger.com/_ZzOZmj1dP0c/SD46E0kQ4oI/AAAAAAAAAVA/uSZv-eKyxNw/s1600-h/vcs.png
+
+./slides/images/git-transport.png
+
+  -- Oliver Steele
+  -- http://osteele.com/archives/2008/05/my-git-workflow
+  -- http://osteele.com/images/2008/git-transport.png
+
+./slides/images/git-workflow.png
+
+  -- Oliver Steele
+  -- http://osteele.com/archives/2008/05/my-git-workflow
+  -- http://osteele.com/images/2008/git-workflow.png
+
+./slides/images/datastore-specutrum.png
+
+  -- Oliver Steele
+  -- http://osteele.com/archives/2008/05/commit-policies
+  -- http://osteele.com/images/2008/datastore-specutrum.png

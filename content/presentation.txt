@@ -1,0 +1,201 @@
+.. include:: <s5defs.txt>
+
+Distributed Source Control
+
+October 2008
+
+Dan McCallum
+
+Agenda
+======
+* Concepts
+* DSCM Providers
+* Git
+
+  * Git+SVN
+  * Git+Sakai
+  * Git Demo
+
+Of mountains and Mohammed...
+============================
+
+Traditional/Centralized SCM
+===========================
+
+.. image:: images/vcs.png
+
+Distributed SCM
+===============
+
+.. image:: images/vcs.png
+
+Canonicality by convention
+==========================
+
+  .. class:: tiny
+
+  | I certainly agree that almost any project will want a "central" repository in the sense that you want to have one canonical default source base that people think of as the "primary" source base.
+  | 
+  | But that should not be a *technical* distinction, it should be a *social* one, if you see what I mean.
+  | 
+  | Distribution doesn't mean that you cannot have central places - but it means that you can have \*different\* central places for different things.   
+  |   -- `Linus Himself`_
+
+.. _Linus Himself: http://lwn.net/Articles/246381/
+
+Foreign branching
+================= 
+
+... or "forking without the nastiness"
+
+* Flexible project structure
+* Lowered participation barriers
+* No lost history
+
+(Paradoxically) Improved offline features
+=========================================
+
+Distributed SCM == Local SCM
+
+(Anecdotally) appealing in sneaker-net environments
+
+Non-prescriptive workflow
+=========================
+
+'[DSCM] means never having to say "you should have..."'
+
+* Stashing
+* Untangling
+* Checkpointing
+* Editable history (!)
+
+Providers
+=========
+
+So many choices...
+==================
+
+`Code co-op`
+
+`Arch`
+
+`Monotone`
+
+`Darcs`
+
+`Mercurial`
+
+So many choices...
+==================
+
+`Bazaar`
+
+`Git`
+
+`Aegis`
+
+`ArX`
+
+`Codeville`
+
+So many choices...
+==================
+
+`DCVS`
+
+`Fossil`
+
+`BitKeeper`
+
+`SVK`
+
+`etc, etc, etc...`
+
+Alas...
+=======
+
+.. class:: center
+
+.. class:: tiny
+
+*happiness = bliss() - (choicesToMake().count() * Stress.UNIT)*
+
+Git
+===
+
+.. class:: tiny
+
+  | Git’s problem is its complexity. Half of that is because it’s actually more powerful than the other systems: it’s got features that make it look scary but that you can ignore. Another half is that Git uses nonstandard names for about half its most common operations.... And the third half is the index. The index is a mechanism for preventing what you commit from matching what you tested in your working directory. Huh?
+  |
+  |   -- `Oliver Steele`_
+
+.. _Oliver Steele: http://osteele.com/archives/2008/05/my-git-workflow
+
+Git's Multiple Repos
+====================
+
+"Salmon run development" -- `Oliver Steele (again)`_
+
+.. _Oliver Steele (again): http://osteele.com/archives/2008/05/commit-policies
+
+.. image:: images/datastore-spectrum.png
+
+Git's Multiple Repos
+====================
+
+.. image:: images/git-transport.png
+
+Checkpointing with Git's Index
+==============================
+
+.. image:: images/git-workflow.png
+
+Teasing Apart Commits with Git
+==============================
+
+EXPLAIN THIS:
+
+  http://tomayko.com/writings/the-thing-about-git
+
+Git's Internals
+===============
+
+Stolen shamelessly from `Git for Computer Scientists`__
+
+__ http://eagain.net/articles/git-for-computer-scientists/
+
+`The Best Presentation on Git Internals`__
+==========================================
+
+__ http://www.gitcasts.com/posts/railsconf-git-talk
+
+Which do *you* think you could explain convincingly to your mom? Git or SVN?
+============================================================================
+
+Or maybe I'm wrong...
+=====================
+
+  .. class:: small
+
+  | $ cd myproject
+  | $ git init
+  | $ git add .
+  | $ git commit -a
+
+Git+SVN
+=======
+
+Git+Sakai
+=========
+
+MISSING STUFF HERE
+==================
+
+This is Section 4
+=================
+* Item 1
+* Item 2
+* Google_
+
+.. _Google: http://google.com
+

@@ -1,0 +1,22 @@
+Unicon Java Developer Forum presentation on DSCM (aka DVCS).
+
+Content is authored in reStructuredText and is intended for output in ES slide
+format.
+
+To build the presentation:
+
+  1) Download and install Docutils (http://docutils.sourceforge.net/)
+  2) Run the presentation build script:
+
+    $ cd <presentation-home>/content
+    $ ./build.sh
+
+  3) Point browser at: <presentation-home>/content/output/presentation.html
+
+Many images are taken directly from various online resources. See
+<presentation-home>/content/credits.txt for more information.
+
+Content was previously authored with the 
+http://www.hacksrus.com/~ginda/makeslides/ script.
+
+
