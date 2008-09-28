@@ -127,9 +127,20 @@ Git
 
   | Git’s problem is its complexity. Half of that is because it’s actually more powerful than the other systems: it’s got features that make it look scary but that you can ignore. Another half is that Git uses nonstandard names for about half its most common operations.... And the third half is the index. The index is a mechanism for preventing what you commit from matching what you tested in your working directory. Huh?
   |
-  |   -- `Oliver Steele`_
+  |   -- `Oliver Steele`__
 
-.. _Oliver Steele: http://osteele.com/archives/2008/05/my-git-workflow
+__ http://osteele.com/archives/2008/05/my-git-workflow
+
+Git
+===
+
+.. class:: tiny
+
+  | The important thing to understand here is that your uncle is crazy. And so is Git.
+  |
+  |   -- `Ryan Tomayko`__
+
+__ http://tomayko.com/writings/the-thing-about-git
 
 Git's Multiple Repos
 ====================
