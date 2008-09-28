@@ -1,2 +1,26 @@
 # List your HTML in the order you want them to appear here.
 # You should have a file named contents.html as the first slide
+
+contents.html       # toc
+
+concepts.html       # Definitions
+
+options.html        # DSVC impls
+
+options-fail.html    # Choice != Happiness
+
+tradeoffs.html      # pro/con
+
+#mercurial.html     # Mercurial
+
+#bazaar.html        # Bazaar
+
+#git.html           # Git
+
+#git-svn.html       # Git-SVN integration
+
+#git-sakai.html     # Git in a Sakai context
+
+#git-in-detail.html # E.g. Git for CS majors
+
+#git-demo.html      # Maybe stashing, teasing apart commits in a single file, push/pull
