@@ -1,23 +1,34 @@
-./slides/images/vcs.png
+./content/images/vcs.png
 
   -- Gaveen Prabhasara
   -- http://gaveen.owain.org/2008/05/simple-diagram-on-distributed-vcs-hint.html
   -- http://bp3.blogger.com/_ZzOZmj1dP0c/SD46E0kQ4oI/AAAAAAAAAVA/uSZv-eKyxNw/s1600-h/vcs.png
 
-./slides/images/git-transport.png
+./content/images/git-transport.png
 
   -- Oliver Steele
   -- http://osteele.com/archives/2008/05/my-git-workflow
   -- http://osteele.com/images/2008/git-transport.png
 
-./slides/images/git-workflow.png
+./content/images/git-workflow.png
 
   -- Oliver Steele
   -- http://osteele.com/archives/2008/05/my-git-workflow
   -- http://osteele.com/images/2008/git-workflow.png
 
-./slides/images/datastore-specutrum.png
+./content/images/datastore-specutrum.png
 
   -- Oliver Steele
   -- http://osteele.com/archives/2008/05/commit-policies
   -- http://osteele.com/images/2008/datastore-specutrum.png
+
+./content/images/ribbit.png
+
+  -- Loren Segal
+  -- http://gnuu.org/tag/not-git-vs-svn/
+  -- http://www.gnuu.org/wp-content/uploads/2008/02/YourSCMmaybedecentralizedbutyourprojecti_132A8/Untitled1.png
+
+./content/images/git-svn-sakai.png
+
+  -- Stuart Freeman
+  -- http://bugs.sakaiproject.org/confluence/download/attachments/28147732/Git-for-Managing-Sakai-Source.odp?version=1

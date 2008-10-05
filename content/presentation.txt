@@ -1,26 +1,36 @@
 .. include:: <s5defs.txt>
 
-Distributed Source Control
+Distributed Source Control (but mainly Git)
 
 October 2008
 
 Dan McCallum
 
+Most of the good stuff stolen shamelessly from: 
+===============================================
+
+`The Best Presentation on Git Internals In the World Ever`__
+============================================================
+
+__ http://www.gitcasts.com/posts/railsconf-git-talk
+
+Visit http://www.gitcasts.com for more of Scott
+===============================================
+
 Agenda
 ======
 * Concepts
-* DSCM Providers
 * Git
+* Git, Sakai, and You
 
-  * Git+SVN
-  * Git+Sakai
-  * Git Demo
+Concepts
+========
 
-Of mountains and Mohammed...
-============================
+1. Of mountains and Mohammed...
+===============================
 
-Traditional/Centralized SCM
-===========================
+Centralized SCM
+===============
 
 .. image:: images/vcs.png
 
@@ -29,184 +39,546 @@ Distributed SCM
 
 .. image:: images/vcs.png
 
-Canonicality by convention
-==========================
+2. Canonicality by Convention
+=============================
 
-  .. class:: tiny
+`"[Centrality] should not be a *technical* distinction..."`:small:
+==================================================================
 
-  | I certainly agree that almost any project will want a "central" repository in the sense that you want to have one canonical default source base that people think of as the "primary" source base.
-  | 
-  | But that should not be a *technical* distinction, it should be a *social* one, if you see what I mean.
-  | 
-  | Distribution doesn't mean that you cannot have central places - but it means that you can have \*different\* central places for different things.   
-  |   -- `Linus Himself`_
+`"...[I]it should be a *social* one, if you see what I mean."`:small:
+=====================================================================
 
-.. _Linus Himself: http://lwn.net/Articles/246381/
+  -- `Linus`__ Himself
 
-Foreign branching
-================= 
+__ http://lwn.net/Articles/246381/
 
-... or "forking without the nastiness"
+3. Cheap branching, Painless Merging
+====================================
 
-* Flexible project structure
-* Lowered participation barriers
-* No lost history
+`Branch without permission`
 
-(Paradoxically) Improved offline features
-=========================================
+`Branch with privacy`
 
-Distributed SCM == Local SCM
+`Branch without losing history`
 
-(Anecdotally) appealing in sneaker-net environments
+`"Now, merging in Bazaar or Git is something very different from what you have in Subversion..."`:small:
+========================================================================================================
 
-Non-prescriptive workflow
-=========================
+`"...You don’t have to remember any revision numbers. You don’t have to worry about all that crap..."`:small:
+=============================================================================================================
 
-'[DSCM] means never having to say "you should have..."'
+`"...and you don’t need to spend half a day on it...."`:small:
+==============================================================
 
-* Stashing
-* Untangling
-* Checkpointing
-* Editable history (!)
+`"...You can just merge."`:small:
+=================================
 
-Providers
-=========
+  -- `Maciej Bliziński`__
 
-So many choices...
-==================
+__ http://info.wsisiz.edu.pl/~blizinsk/git-bzr.html
 
-`Code co-op`
+4. (Paradoxically) Improved Offline Features
+============================================
 
-`Arch`
+`Distributed SCM == Local SCM`
 
-`Monotone`
+`Perfect for airplanes and sneaker nets`
 
-`Darcs`
+5. Non-prescriptive workflow
+============================
 
-`Mercurial`
+`Stashing`
 
-So many choices...
-==================
+`Untangling`
 
-`Bazaar`
+`Staging/Checkpointing`
 
-`Git`
+`Amending`
 
-`Aegis`
+`[DSCM] means never having to say "you should have..."`:small:
+==============================================================
 
-`ArX`
-
-`Codeville`
-
-So many choices...
-==================
-
-`DCVS`
-
-`Fossil`
-
-`BitKeeper`
-
-`SVK`
-
-`etc, etc, etc...`
-
-Alas...
-=======
-
-.. class:: center
-
-.. class:: tiny
-
-*happiness = bliss() - (choicesToMake().count() * Stress.UNIT)*
-
-Git
-===
-
-.. class:: tiny
-
-  | Git’s problem is its complexity. Half of that is because it’s actually more powerful than the other systems: it’s got features that make it look scary but that you can ignore. Another half is that Git uses nonstandard names for about half its most common operations.... And the third half is the index. The index is a mechanism for preventing what you commit from matching what you tested in your working directory. Huh?
-  |
-  |   -- `Oliver Steele`__
-
-__ http://osteele.com/archives/2008/05/my-git-workflow
-
-Git
-===
-
-.. class:: tiny
-
-  | The important thing to understand here is that your uncle is crazy. And so is Git.
-  |
-  |   -- `Ryan Tomayko`__
+  -- `Ryan Tomayko`__
 
 __ http://tomayko.com/writings/the-thing-about-git
 
-Git's Multiple Repos
-====================
+SCM Providers
+=============
 
-"Salmon run development" -- `Oliver Steele (again)`_
+.. image:: images/scm-taxonomy-2.png
 
-.. _Oliver Steele (again): http://osteele.com/archives/2008/05/commit-policies
+Git
+===
 
-.. image:: images/datastore-spectrum.png
+Again...
+========
 
-Git's Multiple Repos
-====================
+Most of the good stuff stolen shamelessly from: 
+===============================================
 
-.. image:: images/git-transport.png
-
-Checkpointing with Git's Index
-==============================
-
-.. image:: images/git-workflow.png
-
-Teasing Apart Commits with Git
-==============================
-
-EXPLAIN THIS:
-
-  http://tomayko.com/writings/the-thing-about-git
-
-Git's Internals
-===============
-
-Stolen shamelessly from `Git for Computer Scientists`__
-
-__ http://eagain.net/articles/git-for-computer-scientists/
-
-`The Best Presentation on Git Internals`__
-==========================================
+`The Best Presentation on Git Internals In the World Ever`__
+============================================================
 
 __ http://www.gitcasts.com/posts/railsconf-git-talk
 
-Which do *you* think you could explain convincingly to your mom? Git or SVN?
-============================================================================
+Visit http://www.gitcasts.com for more of Scott
+===============================================
 
-Or maybe I'm wrong...
+*Anywho...*
+===========
+
+`"The important thing to understand here is that your uncle is crazy. And so is Git."`:small:
+=============================================================================================
+
+-- `Ryan Tomayko`__
+
+__ http://tomayko.com/writings/the-thing-about-git
+
+`"Salmon run development"`:small:
+=================================
+
+-- `Oliver Steele`__
+
+__ http://osteele.com/archives/2008/05/my-git-workflow
+
+.. image:: images/datastore-spectrum.png
+
+SVN this is not
+===============
+
+.. image:: images/git-transport.png
+
+Commands
+========
+
+.. image:: images/git-commands.png
+
+Plumbing
+========
+
+.. image:: images/git-plumbing.png
+
+Porcelain
+=========
+
+.. image:: images/git-porcelain.png
+
+Git's Object Model
+==================
+
+`Git's Object Types`:small:
+===========================
+
+.. image:: images/git-object-types.png
+
+`Git Blobs`:small:
+==================
+
+.. image:: images/git-blob.png
+
+`Git Blobs in Detail`:small:
+============================
+
+.. image:: images/git-blob-detail.png
+
+`Git Trees`:small:
+==================
+
+.. image:: images/git-tree.png
+
+`Git Trees in Detail`:small:
+============================
+
+.. image:: images/git-tree-detail-2.png
+
+`Git Commits`:small:
+====================
+
+.. image:: images/git-commit-objects.png
+
+`Git Commits Generalized`:small:
+================================
+
+.. image:: images/git-dag.png
+
+`Git Tags`:small:
+=================
+
+.. image:: images/git-tags.png
+
+`Git Refs`:small:
+=================
+
+.. image:: images/git-refs.png
+
+Git's Object Model In Action
+============================
+
+`Commit 1`:small:
+=================
+
+.. image:: images/git-tree-modifications-1.png
+
+`Commit 2 (Modify Blob)`:small:
+===============================
+
+.. image:: images/git-tree-modifications-2.png
+
+`Tag`:small:
+============
+
+.. image:: images/git-tree-modifications-3.png
+
+`Commit 3 (Modify Blob)`:small:
+===============================
+
+.. image:: images/git-tree-modifications-4.png
+
+`Repo State`:small:
+===================
+
+.. image:: images/git-tree-modifications-5.png
+
+`Commit 1 DAG`:small:
 =====================
 
-  .. class:: small
+.. image:: images/git-tree-modifications-6.png
 
-  | $ cd myproject
-  | $ git init
-  | $ git add .
-  | $ git commit -a
+`Commit 2 DAG`:small:
+=====================
 
-Git+SVN
-=======
+.. image:: images/git-tree-modifications-7.png
+
+`Commit 3 DAG`:small:
+=====================
+
+.. image:: images/git-tree-modifications-8.png
+
+Git Merge and Rebase
+====================
+
+Local Merging
+=============
+
+`Initial State`:small:
+======================
+
+.. image:: images/git-branching-1.png
+
+`Create Branch`:small:
+======================
+
+.. image:: images/git-branching-2.png
+
+`Commit on Branch`:small:
+=========================
+
+.. image:: images/git-branching-4.png
+
+`Switch Back`:small:
+====================
+
+.. image:: images/git-branching-5.png
+
+`Commit on Master`:small:
+=========================
+
+.. image:: images/git-branching-6.png
+
+`Commit on Branch`:small:
+=========================
+
+.. image:: images/git-branching-8.png
+
+`Merge`:small:
+==============
+
+.. image:: images/git-branching-9.png
+
+Remote Merging
+==============
+
+`Initial State`:small:
+======================
+
+.. image:: images/git-remotes-1.png
+
+`Local Commit`:small:
+======================
+
+.. image:: images/git-remotes-2.png
+
+`Local Commit`:small:
+======================
+
+.. image:: images/git-remotes-3.png
+
+`Remote Fetch`:small:
+======================
+
+.. image:: images/git-remotes-4.png
+
+`Fetched`:small:
+================
+
+.. image:: images/git-remotes-5.png
+
+`New Branch`:small:
+===================
+
+.. image:: images/git-remotes-6.png
+
+`Merge on Branch`:small:
+========================
+
+.. image:: images/git-remotes-7.png
+
+Rebasing
+========
+
+`Initial State`:small:
+======================
+
+.. image:: images/git-rebasing-1.png
+
+`Parallel Commits`:small:
+=========================
+
+.. image:: images/git-rebasing-2.png
+
+`Remote Fetch`:small:
+=====================
+
+.. image:: images/git-rebasing-3.png
+
+`Fetched`:small:
+=====================
+
+.. image:: images/git-rebasing-4.png
+
+`Merge Commit`:small:
+=====================
+
+.. image:: images/git-rebasing-5.png
+
+`Or Rebase...`:small:
+=====================
+
+.. image:: images/git-rebasing-6.png
+
+`Or Rebase...`:small:
+=====================
+
+.. image:: images/git-rebasing-6.png
+
+`Replay`:small:
+=====================
+
+.. image:: images/git-rebasing-7.png
+
+`Dangling Commits`:small:
+=========================
+
+.. image:: images/git-rebasing-8.png
+
+`Linear History`:small:
+=======================
+
+.. image:: images/git-rebasing-9.png
+
+Branching Models and Tools
+==========================
+
+`Branch-Happy Model`:small:
+===========================
+
+.. image:: images/git-conventional-branching-model.png
+
+`Visualizing Branches`:small:
+=============================
+
+.. image:: images/git-show-branch-relationships-1.png
+
+`Visualizing Branches`:small:
+=============================
+
+.. image:: images/git-show-branch-relationships-2.png
+
+Git Workflow Models
+===================
+
+Shared Repo Model
+=================
+
+Just like SVN
+
+`Like SVN`:small:
+=================
+
+.. image:: images/git-shared-repo-workflow-1.png
+
+`Like 'svn co'`:small:
+======================
+
+.. image:: images/git-shared-repo-workflow-2.png
+
+`Like 'svn commit'`:small:
+==========================
+
+.. image:: images/git-shared-repo-workflow-3.png
+
+`Like 'svn update'`:small:
+==========================
+
+.. image:: images/git-shared-repo-workflow-5.png
+
+`Like 'svn commit'`:small:
+==========================
+
+.. image:: images/git-shared-repo-workflow-7.png
+
+
+Dictator/Lieutenants Model
+==========================
+
+E.g. Linux kernel
+
+`Many Repos`:small:
+===================
+
+.. image:: images/git-dictator-workflow-1.png
+
+`Sync from kernel.org`:small:
+=============================
+
+.. image:: images/git-dictator-workflow-2.png
+
+`Rqst Pull`:small:
+==================
+
+.. image:: images/git-dictator-workflow-3.png
+
+`Rqst Pull`:small:
+==================
+
+.. image:: images/git-dictator-workflow-4.png
+
+`Linus Pulls`:small:
+====================
+
+.. image:: images/git-dictator-workflow-5.png
+
+`Linus Blesses`:small:
+======================
+
+.. image:: images/git-dictator-workflow-6.png
+
+`The Circle of Life`:small:
+===========================
+
+.. image:: images/git-dictator-workflow-7.png
+
+Integration Manager Model
+=========================
+
+The github.com model
+
+`Repo Tiers`:small:
+===================
+
+.. image:: images/git-intmgr-workflow-1.png
+
+`GitHub`:small:
+===============
+
+.. image:: images/git-intmgr-workflow-2.png
+
+`GitHub`:small:
+===============
+
+.. image:: images/git-intmgr-workflow-3.png
+
+`So very simple...`:small:
+==========================
+
+.. image:: images/git-remote-workflow-outcome.png
 
 Git+Sakai
 =========
 
-MISSING STUFF HERE
-==================
+`Git+Sakai+SVN @ GT`:small:
+===========================
 
-This is Section 4
-=================
-* Item 1
-* Item 2
-* Google_
+.. image:: images/git-svn-sakai.png
 
-.. _Google: http://google.com
+Git/DSCM+You
+============
 
+Mmmmm... Shiny Objects...
+=========================
+
+`(ribbit)`:tiny:
+================
+
+.. image:: images/ribbit.png
+
+Put down the koolaid and back away... slowly
+============================================
+
+`"Git is a technical masterpiece; but not all technical masterpieces are useful to you."`:small:
+================================================================================================
+
+  -- `Loren Segal`__
+
+__ http://gnuu.org/tag/not-git-vs-svn/
+
+`"Yahoo's problems are not your problems"`:small:
+=================================================
+
+  -- `Jeff Atwood`__
+
+__ http://www.codinghorror.com/blog/archives/000932.html
+
+My goodness, this thing is complicated...
+=========================================
+
+`git-merge-octopus?`:tiny:
+==========================
+
+.. image:: images/git-commands.png
+
+`tree-ish`:tiny:
+================
+
+.. image:: images/git-treeish-1.png
+
+`tree-ish`:tiny:
+================
+
+.. image:: images/git-treeish-3.png
+
+`Could you explain Git to your mom (or PM)? How about SVN?`:small:
+==================================================================
+
+Are SVN's problems truly technical?
+===================================
+
+Conflicts Conflicts Conflicts
+=============================
+
+Q & A
+=====
+
+Git this presentation at:
+=========================
+
+git://github.com/dmccallum/dvcs-presentation.git
+
+(You'll need Docutils__)
+
+__ http://docutils.sourceforge.net/
+
+Dan's SCM Tag:
+==============
+
+http://delicious.com/dmccallum/scm
