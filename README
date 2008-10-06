@@ -8,10 +8,10 @@ To build the presentation:
   1) Download and install Docutils (http://docutils.sourceforge.net/)
   2) Run the presentation build script:
 
-    $ cd <presentation-home>/content
+    $ cd <presentation-home>
     $ ./build.sh
 
-  3) Point browser at: <presentation-home>/content/output/presentation.html
+  3) Point browser at: <presentation-home>/output/presentation.html
 
 Many images are taken directly from various online resources. See
 <presentation-home>/content/credits.txt for more information.
