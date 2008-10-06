@@ -14,6 +14,11 @@ Most of the good stuff stolen shamelessly from:
 
 __ http://www.gitcasts.com/posts/railsconf-git-talk
 
+`.`:tiny:
+=========
+
+.. image:: images/getting-git-title-slide.png
+
 Visit http://www.gitcasts.com for more of Scott
 ===============================================
 
@@ -29,15 +34,15 @@ Concepts
 1. Of mountains and Mohammed...
 ===============================
 
-Centralized SCM
-===============
+`Centralized SCM`:small:
+========================
 
-.. image:: images/vcs.png
+.. image:: images/vcs-centralized.png
 
-Distributed SCM
-===============
+`Distributed SCM`:small:
+========================
 
-.. image:: images/vcs.png
+.. image:: images/vcs-decentralized.png
 
 2. Canonicality by Convention
 =============================
@@ -45,12 +50,16 @@ Distributed SCM
 `"[Centrality] should not be a *technical* distinction..."`:small:
 ==================================================================
 
-`"...[I]it should be a *social* one, if you see what I mean."`:small:
+`"...[I]t should be a *social* one, if you see what I mean."`:small:
 =====================================================================
 
   -- `Linus`__ Himself
 
 __ http://lwn.net/Articles/246381/
+
+__ http://utsl.gen.nz/talks/git-svn/intro.html
+
+.. image:: images/GreatPumpkin.jpg
 
 3. Cheap branching, Painless Merging
 ====================================
@@ -91,12 +100,16 @@ __ http://info.wsisiz.edu.pl/~blizinsk/git-bzr.html
 
 `Untangling`
 
+5.1 Non-prescriptive workflow (cont.)
+=====================================
+
 `Staging/Checkpointing`
 
 `Amending`
 
-`[DSCM] means never having to say "you should have..."`:small:
-==============================================================
+
+`'[DSCM] means never having to say "you should have..."'`:small:
+================================================================
 
   -- `Ryan Tomayko`__
 
@@ -119,6 +132,11 @@ Most of the good stuff stolen shamelessly from:
 `The Best Presentation on Git Internals In the World Ever`__
 ============================================================
 
+`.`:tiny:
+=========
+
+.. image:: images/getting-git-title-slide.png
+
 __ http://www.gitcasts.com/posts/railsconf-git-talk
 
 Visit http://www.gitcasts.com for more of Scott
@@ -127,17 +145,31 @@ Visit http://www.gitcasts.com for more of Scott
 *Anywho...*
 ===========
 
+`"... [Git is] not an SCM, it's a distribution and archival mechanism..."`:small:
+=================================================================================
+
+`"...I bet you could make a reasonable SCM on top of it, though..."`:small:
+===========================================================================
+
+`"...It's really a content-addressable filesystem, used to track directory trees."`:small:
+==========================================================================================
+
+  -- Linus__
+
+Hmmmm... Uh-huh...
+==================
+
 `"The important thing to understand here is that your uncle is crazy. And so is Git."`:small:
 =============================================================================================
 
--- `Ryan Tomayko`__
+  -- `Ryan Tomayko`__
 
 __ http://tomayko.com/writings/the-thing-about-git
 
 `"Salmon run development"`:small:
 =================================
 
--- `Oliver Steele`__
+  -- `Oliver Steele`__
 
 __ http://osteele.com/archives/2008/05/my-git-workflow
 
@@ -200,6 +232,11 @@ Git's Object Model
 ================================
 
 .. image:: images/git-dag.png
+
+`Git DAGs`:small:
+=================
+
+http://eagain.net/articles/git-for-computer-scientists/
 
 `Git Tags`:small:
 =================
@@ -360,11 +397,6 @@ Rebasing
 =====================
 
 .. image:: images/git-rebasing-5.png
-
-`Or Rebase...`:small:
-=====================
-
-.. image:: images/git-rebasing-6.png
 
 `Or Rebase...`:small:
 =====================

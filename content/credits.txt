@@ -32,3 +32,8 @@
 
   -- Stuart Freeman
   -- http://bugs.sakaiproject.org/confluence/download/attachments/28147732/Git-for-Managing-Sakai-Source.odp?version=1
+
+./content/images/GreatPumpkin.jpg
+
+  -- http://en.wikipedia.org/wiki/Image:GreatPumpkin.jpg
+  -- http://upload.wikimedia.org/wikipedia/en/7/74/GreatPumpkin.jpg
