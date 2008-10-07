@@ -115,8 +115,8 @@ __ http://info.wsisiz.edu.pl/~blizinsk/git-bzr.html
 
 __ http://tomayko.com/writings/the-thing-about-git
 
-SCM Providers
-=============
+`SCM Providers`:small:
+======================
 
 .. image:: images/scm-taxonomy-2.png
 
@@ -538,7 +538,7 @@ The github.com model
 Git+Sakai
 =========
 
-`Git+Sakai+SVN @ GT`:small:
+`Git+Sakai+SVN @ GT`:tiny:
 ===========================
 
 .. image:: images/git-svn-sakai.png
