@@ -541,7 +541,7 @@ Git+Sakai
 `Git+Sakai+SVN @ GT`:tiny:
 ===========================
 
-.. image:: images/git-svn-sakai.png
+.. image:: images/git-svn-sakai-scaled-down-2.png
 
 Git/DSCM+You
 ============
